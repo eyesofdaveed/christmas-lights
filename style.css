@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgb(2, 20, 22);
+    width: 100%;
+    padding: 10%;
+}
+
+.lights {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.lights .circle {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.lights .animate-1 {
+    animation-name: lights-up;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.lights .animate-2 {
+    animation-name: lights-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.lights .animate-3 {
+    animation-name: lights-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.lights .animate-4 {
+    animation-name: lights-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.lights .animate-5 {
+    animation-name: lights-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.title h1 {
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 55px rgba(184, 235, 219, 0.733);
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 3px;
+    margin-top: 10%;
+}
+
+.lights .red {
+    background-color: red;
+    box-shadow: 0 0 70px rgb(255, 88, 88);
+
+}
+
+.lights .yellow {
+    background-color: rgb(255, 255, 40);
+    box-shadow: 0 0 70px rgb(255, 255, 62);
+    animation-delay: 1s;
+}
+
+.lights .blue {
+    background-color: rgb(42, 42, 255);
+    box-shadow: 0 0 70px rgb(69, 69, 255);
+}
+
+.lights .green {
+    background-color: rgb(50, 255, 50);
+    box-shadow: 0 0 70px rgb(64, 255, 64);
+    animation-delay: 1s;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.control button {
+    background-color: white;
+    color: rgb(2, 20, 22);
+    font-size: 18px;
+    border: none;
+    margin: 0.5rem;
+}
+
+.control button:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+.control .btn1 {
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.control .btn2 {
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+.dim {
+    filter: brightness(0.2);
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;  
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0 10px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.control span {
+    color: white;
+    font-size: 18px;
+}
+
+@keyframes lights-up {
+    0% {
+        filter: brightness(0) saturate(0) contrast(0);
+    }
+    50% {
+        filter: brightness(100%) saturate(100%) contrast(100%);
+    }
+    100% {
+        filter: brightness(0) saturate(0) contrast(0);
+    }
+}
+
