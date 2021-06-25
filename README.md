@@ -2,7 +2,7 @@
 Christmas lights imitation with the controller (one of 10 webApps challenge)
 
 ## Description
-Web imitation of Christmas Lights with the control unit for the interval.
+Web imitation of Christmas Lights with the control unit for the interval duration.
 
 ## Demo link
 https://eyesofdaveed.github.io/christmas-lights/
